@@ -66,7 +66,3 @@ If you're an F5 employee who needs source access, reach out to **d.doshi@f5.com*
 ## Code of conduct
 
 Be kind. Assume good intent. Reports that include slurs, harassment, or off-topic content will be closed without comment.
-
----
-
-*Powered by [F5](https://www.f5.com) · Hosted on Azure Static Web Apps*
