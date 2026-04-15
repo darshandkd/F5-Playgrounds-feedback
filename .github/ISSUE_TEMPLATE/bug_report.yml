@@ -1,0 +1,89 @@
+name: 🐛 Bug Report
+description: Something on the playground is broken or behaving unexpectedly.
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug — the more specific you can be, the faster it gets fixed.
+        Before filing, please **hard-refresh** the page (Cmd+Shift+R / Ctrl+Shift+F5) to rule out a stale cache.
+
+  - type: dropdown
+    id: playground
+    attributes:
+      label: Which playground?
+      options:
+        - Gallery (the landing page with two tiles)
+        - AI Playground
+        - EOB Playground
+        - All / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Where exactly?
+      description: Tab name, sidebar item, button, or simulator. Be specific.
+      placeholder: e.g. AI Playground → Inference → Semantic Caching → "F5 BNK" toggle
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Numbered, in the order you did them.
+      placeholder: |
+        1. Open the gallery
+        2. Click the AI Playground tile
+        3. Click the "Inference" tab
+        4. ...
+    validations:
+      required: true
+
+  - type: input
+    id: env
+    attributes:
+      label: Browser + OS + viewport
+      placeholder: e.g. Chrome 138 / macOS 14 / 1440x900 desktop
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or recording
+      description: Drag-and-drop a PNG, JPG, or short video. Even a quick crop helps a lot.
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors (if any)
+      description: Open DevTools (F12 / Cmd+Opt+I), check the Console tab, paste any red errors here.
+      render: shell
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Final checks
+      options:
+        - label: I hard-refreshed the page before filing
+          required: true
+        - label: I searched existing issues for duplicates
+          required: true

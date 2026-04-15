@@ -1,0 +1,37 @@
+name: ❓ Question
+description: Ask about how the playground works, what a simulation represents, or how to use it.
+title: "[Question] "
+labels: ["question", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, please **search [closed issues](https://github.com/darshandkd/F5-AI-Playground-feedback/issues?q=is%3Aissue+is%3Aclosed)** — your question may already be answered.
+
+  - type: dropdown
+    id: about
+    attributes:
+      label: What's your question about?
+      options:
+        - How a specific simulation works
+        - What an F5 product in the playground actually does
+        - Whether a behavior is a bug or by-design
+        - How to use a feature
+        - Roadmap / what's coming next
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Be specific — vague questions get vague answers.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context (optional)
+      description: What were you trying to do? What did you read/try first?

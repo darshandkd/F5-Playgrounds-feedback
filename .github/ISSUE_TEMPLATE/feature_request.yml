@@ -1,0 +1,64 @@
+name: ✨ Feature Request
+description: Suggest a new simulation, concept explainer, or capability you'd like to see in the playground.
+title: "[Feature] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! Feature requests are reviewed quarterly against the demo roadmap.
+        Strong proposals describe **who** would use it and **why** the playground falls short today.
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Which playground would this go in?
+      options:
+        - Gallery (landing page)
+        - AI Playground
+        - EOB Playground
+        - A new playground
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Who would use this and what are they trying to do?
+      placeholder: e.g. F5 SEs demoing AI Guardrails to security buyers — they need a way to show realistic data exfiltration scenarios live.
+    validations:
+      required: true
+
+  - type: textarea
+    id: gap
+    attributes:
+      label: What's missing today?
+      description: What does the playground not do (or do poorly) right now that this would address?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: How might it work?
+      description: Rough sketch. Don't over-engineer — just enough for us to start a conversation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References, mockups, or links (optional)
+      description: Screenshots of similar tools, links to F5 docs, marketing assets, anything that gives us the picture.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this to you?
+      options:
+        - Nice to have
+        - Would unlock a specific demo / customer conversation
+        - Blocker (today's playground actively misleads or omits something critical)
+    validations:
+      required: true
