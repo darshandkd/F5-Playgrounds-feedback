@@ -14,11 +14,12 @@ body:
     attributes:
       label: Which playground would this go in?
       options:
-        - Gallery (landing page)
+        - Gallery (umbrella landing page)
         - AI Playground
         - EOB Playground
-        - A new playground
-        - Not sure
+        - Another existing playground
+        - A brand-new playground (doesn't exist yet)
+        - Not sure / cross-cutting
     validations:
       required: true
 

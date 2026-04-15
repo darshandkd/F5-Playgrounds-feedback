@@ -14,9 +14,10 @@ body:
     attributes:
       label: Which playground?
       options:
-        - Gallery (the landing page with two tiles)
+        - Gallery (the umbrella landing page)
         - AI Playground
         - EOB Playground
+        - Another / not listed
         - All / not sure
     validations:
       required: true
