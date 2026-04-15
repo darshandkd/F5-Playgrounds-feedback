@@ -59,8 +59,6 @@ When a fix ships, you'll see it on the live URL within ~5 minutes of the maintai
 
 The playgrounds are built and maintained by an internal F5 marketing/engineering function. The source is kept private to protect ongoing product roadmap work, but the experiences themselves are publicly accessible — and we want a public way to hear from the people using them.
 
-If you're an F5 employee who needs source access, reach out to **d.doshi@f5.com** directly.
-
 ---
 
 ## Code of conduct
