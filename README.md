@@ -1,6 +1,6 @@
 # F5 Playgrounds — Feedback & Issue Tracker
 
-This repository is the **public issue tracker** for the **[F5 Playgrounds collection](https://kind-beach-0b0b70c1e-2.westus2.7.azurestaticapps.net/)** — a growing set of hands-on, interactive demonstrations of F5's product portfolio, with a single Gallery as the entry point.
+This repository is the **public issue tracker** for the **[F5 Playgrounds collection](https://playgrounds.darshandkd.com/)** — a growing set of hands-on, interactive demonstrations of F5's product portfolio, with a single Gallery as the entry point.
 
 > **Heads-up:** This repo intentionally contains **no source code**. The applications themselves live in a separate private repository.
 > Everything here is for filing bugs, requesting features, and asking questions about the live experiences.
@@ -11,9 +11,9 @@ This repository is the **public issue tracker** for the **[F5 Playgrounds collec
 
 | Playground | What it demonstrates |
 |---|---|
-| **[Gallery](https://kind-beach-0b0b70c1e-2.westus2.7.azurestaticapps.net/)** | The umbrella landing page — discover and launch any playground |
-| **[AI Playground](https://kind-beach-0b0b70c1e-2.westus2.7.azurestaticapps.net/ai-playground/)** | 30+ interactive simulations across Inference, Safety, and Data Delivery, plus 14 animated AI concept explainers |
-| **[EOB Playground](https://kind-beach-0b0b70c1e-2.westus2.7.azurestaticapps.net/eob-playground/)** | Edge-on-BIG-IP (Tawon EOB) labs covering eBPF kernel-level observability, 5G core topology, and protocol tracing |
+| **[Gallery](https://playgrounds.darshandkd.com/)** | The umbrella landing page — discover and launch any playground |
+| **[AI Playground](https://playgrounds.darshandkd.com/ai-playground/)** | 30+ interactive simulations across Inference, Safety, and Data Delivery, plus 14 animated AI concept explainers |
+| **[EOB Playground](https://playgrounds.darshandkd.com/eob-playground/)** | F5 eBPF Observability for 5G — kernel-level visibility on every Kubernetes node, sidecar vs eBPF comparison, TLS blind-spot inspection, capacity-at-scale ROI, and a deep eBPF lifecycle lab |
 | **More on the way** | Future playgrounds will appear here as they ship |
 
 This tracker captures feedback for **all** of them — current and future. Use the **"Which playground?"** dropdown when filing an issue so it routes correctly.
@@ -32,6 +32,8 @@ This tracker captures feedback for **all** of them — current and future. Use t
 
 ### Have a feature idea?
 [Suggest a Feature](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/new?template=feature_request.yml). Tell us what you want to demonstrate or learn that the playgrounds don't cover yet — including ideas for **entirely new playgrounds**.
+
+> Pitching a brand-new playground? The visual language, layout, theme, and component patterns that every playground follows are documented in `DESIGN.md` (in the source repo). It's the single source of truth for keeping new additions native to the family.
 
 ### Just have a question?
 [Ask a Question](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/new?template=question.yml) or check existing issues — yours might already be answered.
