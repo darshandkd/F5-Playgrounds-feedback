@@ -14,6 +14,9 @@ This repository is the **public issue tracker** for the **[F5 Playgrounds collec
 | **[Gallery](https://playgrounds.darshandkd.com/)** | The umbrella landing page — discover and launch any playground |
 | **[AI Playground](https://playgrounds.darshandkd.com/ai-playground/)** | 30+ interactive simulations across Inference, Safety, and Data Delivery, plus 14 animated AI concept explainers |
 | **[EOB Playground](https://playgrounds.darshandkd.com/eob-playground/)** | F5 eBPF Observability for 5G — kernel-level visibility on every Kubernetes node, sidecar vs eBPF comparison, TLS blind-spot inspection, capacity-at-scale ROI, and a deep eBPF lifecycle lab |
+| **[BIG-IP Playground](https://playgrounds.darshandkd.com/bigip/)** | F5 BIG-IP simulator. Three deeply-animated LTM use-cases live today: **Load Balancing** (live algorithm switching, full-proxy two-leg pills, Standard vs FastL4), **Disaggregator (DAG)** (8-TMM hash distribution across 4 monitor modes, 4 traffic patterns, hot-spot detection, reverse-traffic asymmetry), and **Health Monitoring** (per-monitor wire-level Inspector — HTTP/HTTPS/TCP/TCP half-open/ICMP/Inband — with Mac-style live `bigd` log terminal). ASM / AFM / APM / DNS surfaced as "Soon" tabs. |
+| **NGINX** *(coming soon)* | NGINX Plus, NGINX App Protect, and NGINX One simulations — placeholder tile on the Gallery |
+| **XC Distributed Cloud** *(coming soon)* | F5 Distributed Cloud — multi-cloud networking, security, and edge compute — placeholder tile on the Gallery |
 | **More on the way** | Future playgrounds will appear here as they ship |
 
 This tracker captures feedback for **all** of them — current and future. Use the **"Which playground?"** dropdown when filing an issue so it routes correctly.
@@ -24,7 +27,7 @@ This tracker captures feedback for **all** of them — current and future. Use t
 
 ### Found a bug?
 [Open a Bug Report](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/new?template=bug_report.yml). Please include:
-- Which playground (Gallery, AI Playground, EOB Playground, or another)
+- Which playground (Gallery, AI Playground, EOB Playground, BIG-IP Playground, or another)
 - Which simulation, tab, or feature
 - Browser + OS
 - A screenshot if visual
@@ -43,7 +46,7 @@ This tracker captures feedback for **all** of them — current and future. Use t
 - [Bugs](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Abug+is%3Aopen)
 - [Feature requests](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aenhancement+is%3Aopen)
 - [Recently fixed](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Afixed+is%3Aclosed)
-- Filter by playground: [`gallery`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Agallery) · [`ai-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aai-playground) · [`eob-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aeob-playground)
+- Filter by playground: [`gallery`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Agallery) · [`ai-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aai-playground) · [`eob-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aeob-playground) · [`bigip-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Abigip-playground)
 
 ---
 
