@@ -6,7 +6,7 @@ Thank you for taking the time to report something — well-written issues get fi
 
 A good bug report gives the maintainer everything needed to reproduce the problem in 30 seconds:
 
-1. **Which playground** — Gallery (the umbrella landing), AI Playground, EOB Playground, or "another / not listed". This is the most important field — it routes your issue to the right place.
+1. **Which playground** — Gallery (the umbrella landing), AI Playground, BIG-IP Playground, EOB Playground, XC Distributed Cloud, or "another / not listed". This is the most important field — it routes your issue to the right place.
 2. **Where exactly** — tab name, sidebar item, button you clicked
 3. **What you expected** vs **what happened**
 4. **Reproduction steps** — numbered, in order
@@ -26,7 +26,7 @@ Search [open and closed issues](https://github.com/darshandkd/F5-Playgrounds-fee
 
 ## What happens after you file
 
-- **Triage** (1-3 business days): we add labels for type (`bug`, `enhancement`, `question`) and playground (`gallery`, `ai-playground`, `eob-playground`, or `playground:future` for ideas about a playground that doesn't exist yet) plus a priority
+- **Triage** (1-3 business days): we add labels for type (`bug`, `enhancement`, `question`) and playground (`gallery`, `ai-playground`, `bigip-playground`, `eob-playground`, `xc-playground`, or `playground:future` for ideas about a playground that doesn't exist yet) plus a priority
 - **Investigation**: we may ask for more details — please respond, otherwise we'll close the issue after 14 days of silence
 - **Fix**: code changes happen in the private source repo. When the fix ships to the live site, we close your issue with a comment and the `fixed` label
 

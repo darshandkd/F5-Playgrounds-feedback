@@ -16,7 +16,9 @@ body:
       options:
         - Gallery (the umbrella landing page)
         - AI Playground
+        - BIG-IP Playground
         - EOB Playground
+        - XC Distributed Cloud
         - Another / not listed
         - All / not sure
     validations:
