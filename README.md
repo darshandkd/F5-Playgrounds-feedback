@@ -50,22 +50,6 @@ This tracker captures feedback for **all** of them — current and future. Use t
 
 ---
 
-## Triage & response
-
-Maintained by **[@darshandkd](https://github.com/darshandkd)** (d.doshi@f5.com).
-
-Typical response window: **2-3 business days**. Reproducible bugs with screenshots usually get triaged the fastest. Feature requests are evaluated quarterly against the demo roadmap.
-
-When a fix ships, you'll see it on the live URL within ~5 minutes of the maintainer closing the issue.
-
----
-
-## Why is this repo separate from the source code?
-
-The playgrounds are built and maintained by an internal F5 marketing/engineering function. The source is kept private to protect ongoing product roadmap work, but the experiences themselves are publicly accessible — and we want a public way to hear from the people using them.
-
----
-
 ## Code of conduct
 
 Be kind. Assume good intent. Reports that include slurs, harassment, or off-topic content will be closed without comment.
