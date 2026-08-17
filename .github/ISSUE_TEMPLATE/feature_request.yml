@@ -6,8 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for the idea! Feature requests are reviewed quarterly against the demo roadmap.
-        Strong proposals describe **who** would use it and **why** the playground falls short today.
+        Thanks for the idea. Feature requests are input, not a work queue — there is no
+        commitment that a request will be implemented. Strong proposals describe **who**
+        would use it and **why** the playground falls short today.
 
   - type: dropdown
     id: scope

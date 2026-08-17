@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting a bug — the more specific you can be, the faster it gets fixed.
+        Thanks for reporting a bug — the more specific you can be, the more useful the report is.
         Before filing, please **hard-refresh** the page (Cmd+Shift+R / Ctrl+Shift+F5) to rule out a stale cache.
 
   - type: dropdown

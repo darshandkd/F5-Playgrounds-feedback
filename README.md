@@ -4,6 +4,8 @@ This repository is the **public issue tracker** for the **[F5 Playgrounds collec
 
 > **Heads-up:** This repo intentionally contains **no source code**. The applications themselves live in a separate private repository.
 > Everything here is for filing bugs, requesting features, and asking questions about the live experiences.
+>
+> Feedback is welcome and read, but there is **no committed response time and no commitment to implement any report or request.** Filing an issue is input, not a work order.
 
 ---
 
