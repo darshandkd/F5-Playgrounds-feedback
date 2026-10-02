@@ -1,0 +1,55 @@
+name: Acknowledge new issue
+
+# Instant, no-AI acknowledgement for every new issue. Triage, planning and fixes are done by the
+# maintainer's local agent, which looks for the same hidden markers (<!-- f5pg:* -->) to stay idempotent.
+on:
+  issues:
+    types: [opened, reopened]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Issue number to acknowledge
+        required: true
+      dry_run:
+        description: Log what would happen, post nothing
+        type: boolean
+        default: true
+
+permissions:
+  issues: write
+
+jobs:
+  ack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        with:
+          script: |
+            const MARK = '<!-- f5pg:ack -->';
+            const number = Number(process.env.ISSUE_NUMBER);
+            const dry = process.env.DRY_RUN === 'true';
+            const { owner, repo } = context.repo;
+
+            const issue = (await github.rest.issues.get({ owner, repo, issue_number: number })).data;
+            if (issue.pull_request) { core.info(`#${number} is a pull request — skip`); return; }
+
+            const comments = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number: number, per_page: 100 });
+            const acked = comments.some(c => (c.body || '').includes(MARK));
+            const reopened = context.payload.action === 'reopened';
+
+            if (acked && !reopened) { core.info(`#${number} already acknowledged — skip`); return; }
+
+            const who = issue.user.login;
+            const body = reopened && acked
+              ? `Thanks @${who} — reopened and back in the triage queue. We'll follow up here.\n\n${MARK}`
+              : `Thanks @${who} — received and logged. It's in the triage queue now; we'll post a triage note here shortly (scope + priority), and when a change ships we'll reply with what changed and a direct link to it on the live Playgrounds. Feel free to add screenshots or details anytime.\n\n${MARK}`;
+
+            const hasTriage = issue.labels.some(l => (l.name || l) === 'triage');
+            if (dry) { core.info(`[dry run] would comment on #${number}${hasTriage ? '' : ' and add label triage'}:\n${body}`); return; }
+
+            await github.rest.issues.createComment({ owner, repo, issue_number: number, body });
+            if (!hasTriage) await github.rest.issues.addLabels({ owner, repo, issue_number: number, labels: ['triage'] });
+            core.info(`#${number} acknowledged`);
