@@ -6,8 +6,8 @@ Thank you for taking the time to report something. A clear, specific issue is fa
 
 A good bug report gives the maintainer everything needed to reproduce the problem in 30 seconds:
 
-1. **Which playground** — Gallery (the umbrella landing), AI Playground, BIG-IP Playground, XC Distributed Cloud, NGINX Playground, EOB Playground, or "another / not listed". This is the most important field — it routes your issue to the right place.
-2. **Where exactly** — tab name, sidebar item, button you clicked
+1. **Which playground** — Gallery, AI Playground, BIG-IP, NGINX, XC Distributed Cloud, F5 Insight, EOB, or "another / not listed". This is the most important field — it routes your issue to the right place.
+2. **Where exactly** — paste the scenario link from your address bar (every scenario has its own URL), plus the button you clicked
 3. **What you expected** vs **what happened**
 4. **Reproduction steps** — numbered, in order
 5. **Browser + OS + viewport size** — Chrome 138 / macOS 14 / 1440×900 desktop
@@ -26,9 +26,9 @@ Search [open and closed issues](https://github.com/darshandkd/F5-Playgrounds-fee
 
 ## What happens after you file
 
-Issues are read and labelled by type (`bug`, `enhancement`, `question`) and by playground (`gallery`, `ai-playground`, `bigip-playground`, `xc-playground`, `nginx-playground`, `eob-playground`, or `playground:future` for ideas about a playground that doesn't exist yet).
+Issues are read and labelled by type (`bug`, `enhancement`, `question`) by playground (`gallery`, `ai-playground`, `bigip`, `nginx`, `xc`, `insight`, `eob-playground`, `cross-cutting`, or `playground:future` for a playground that doesn't exist yet) and by priority. Good ideas that aren't scheduled yet get the `roadmap` label and stay open.
 
-There is **no committed response time, and no commitment to implement any report or request.** Filing an issue is not a work order — it's input. Some issues are picked up, some are kept for later, and some are closed without action. If more detail is needed, someone may ask; if an issue goes quiet it may be closed. When something does change on the live site as a result, the issue is closed with the `fixed` label.
+There is **no committed response time, and no commitment to implement any report or request.** Filing an issue is not a work order — it's input. Some issues are picked up, some are kept for later, and some are closed without action. If more detail is needed, someone may ask; if an issue goes quiet it may be closed. When something changes on the live site as a result, the issue gets a short release note with a direct link and is closed with the `fixed` label.
 
 ## What this repo is *not*
 

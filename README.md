@@ -1,57 +1,81 @@
 # F5 Playgrounds — Feedback & Issue Tracker
 
-This repository is the **public issue tracker** for the **[F5 Playgrounds collection](https://playgrounds.darshandkd.com/)** — a growing set of hands-on, interactive demonstrations of F5's product portfolio, with a single Gallery as the entry point.
+This is the **public issue tracker** for **[F5 Playgrounds](https://playgrounds.amer-ent.f5demos.com/)**: hands-on, animated simulations of F5's portfolio that you can run in a browser. No install and no account; press **Run** and watch what the product does.
 
-> **Heads-up:** This repo intentionally contains **no source code**. The applications themselves live in a separate private repository.
-> Everything here is for filing bugs, requesting features, and asking questions about the live experiences.
->
-> Feedback is welcome and read, but there is **no committed response time and no commitment to implement any report or request.** Filing an issue is input, not a work order.
+> This repo has **no source code**. The playgrounds live in a separate private repository.
+> Use it to report bugs, request features and ask questions about the live site.
+> Feedback is read, but there is **no committed response time and no commitment to implement** any request. An issue is input, not a work order.
 
 ---
 
-## What's in the F5 Playgrounds collection
+## The playgrounds
 
-| Playground | What it demonstrates |
+Most scenarios follow the same pattern: a short premise, an animated diagram, one **Run** button, and an **on/off switch** for the F5 product so you can compare *with* and *without* it.
+
+| Playground | What you can explore |
 |---|---|
-| **[Gallery](https://playgrounds.darshandkd.com/)** | The umbrella landing page — discover and launch any playground |
-| **[AI Playground](https://playgrounds.darshandkd.com/ai-playground/)** | 36 interactive simulations across **Inference** (9), **Safety & Security** (7 — including **AI Workflow Governance** powered by **SurePath AI**, and **F5 AI Gateway** across its Model and MCP planes), and **Data Delivery** (5), plus **12** animated AI-concept explainers, an **AI Security** section (adversarial techniques + AI guardrails), and a catalog of F5's **AI product portfolio** (BIG-IP Next for Kubernetes, AI Guardrails, AI Red Team, SSL Orchestrator, and more) |
-| **[BIG-IP Playground](https://playgrounds.darshandkd.com/bigip/)** | F5 BIG-IP simulator — **fully live across all five core modules with 30 deeply-animated use-cases**: **LTM** (6 — load balancing, DAG disaggregation, SSL offload, persistence, health monitoring, iRules) · **WAF/ASM** (6 — signature blocking, brute force, bot defense, behavioral L7 DoS, IP intelligence, and **AI Risk Scoring**: a 1–100 risk score that decides whether a signature match is actually an attack, so the same match can be delivered or stopped) · **AFM** (3 — network firewall policy, L3/4 IP intelligence, device DoS) · **Zero Trust Access** (8 — *formerly APM*: Visual Policy Editor SSO, SAML IdP, per-request authorization, endpoint posture, OAuth→KCD, Entra ID OIDC, HTTP Connector→OPA, CAC/smart-card) · **DNS** (7 — GSLB resolution, topology LB, DNS Express, DNSSEC signing, GSLB failover, agentic-AI steering) |
-| **[EOB Playground](https://playgrounds.darshandkd.com/eob-playground/)** | **F5 eBPF Observability for 5G — built with MantisNet.** Kernel-level visibility across the 5G fabric (RAN → 5G Core → Data Network) through three labs: the **Linux Kernel**, the **eBPF lifecycle** (write → verify → load → observe safely), and a **live 5G fabric** streaming kernel-level telemetry from every network function |
-| **[XC Distributed Cloud](https://playgrounds.darshandkd.com/xc/)** | **F5 Distributed Cloud — 19 scenarios across five modules.** **Multi-Cloud Networking** (5 — Network Connect L3, App Connect L7 "connect apps, not networks", Segmentation, Service Mesh, Customer Edge Deploy-Anywhere) · **WAAP** (5 — WAF attack signatures, API discovery & schema validation, L7 DDoS, web-app scanning, **AI Risk Scoring**) · **Bot Defense & Fraud** (6 — adaptive bot defense, per-request signal detection, client-side / Magecart defense, account protection, authentication intelligence, agentic-AI commerce) · **App Delivery & Edge** (3 — DNS & GSLB, CDN, App Stack / vK8s) — plus platform **Fundamentals** (Regional Edges, Customer Edges, the F5 Global Network). |
-| **[NGINX Playground](https://playgrounds.darshandkd.com/nginx/)** | **Now live — 17 scenarios across six modules:** **NGINX Fundamentals** (5) · **NGINX Plus** (5 — dynamic upstreams, cluster state sync, content caching, active health checks, and more) · **F5 WAF + DoS for NGINX** (2) · **NGINX for Kubernetes** (2 — Gateway Fabric) · **NGINX One** (2 — fleet CVE & drift radar, config sync groups) · **NGINXaaS** (1) |
-| **More on the way** | Future playgrounds will appear here as they ship |
+| **[Gallery](https://playgrounds.amer-ent.f5demos.com/)** | The landing page. Pick any playground from here. |
+| **[AI Playground](https://playgrounds.amer-ent.f5demos.com/ai-playground/)** | How F5 delivers and secures AI. **Inference** (9, F5 BNK and NGINX): LLM request routing, semantic caching, GPU utilization, inference-aware load balancing, token governance, RAG pipeline, MCP server protection, NIM prompt classification, EPP inference router. **Safety & Security** (5): F5 AI Guardrails, F5 AI Red Team, F5 Workforce AI, F5 AI Powered WAF, F5 AI Gateway (in development). **Data Delivery** (5). **AI Concepts** (11 explainers, from how LLMs think to MCP). **AI Threats** (7 real incidents). **F5 Products** (the AI portfolio). |
+| **[BIG-IP](https://playgrounds.amer-ent.f5demos.com/bigip/)** | 32 scenarios across five modules. **LTM** (8): load balancing, full proxy, DAG, SSL offload, SNAT, persistence, health monitoring, iRules. **WAF** (6): signatures, brute force, bot defense, behavioral L7 DoS, IP intelligence, AI Powered WAF. **AFM** (3). **APM / Zero Trust Access** (8). **DNS** (7). Plus a BIG-IP **MCP server** tool. |
+| **[NGINX](https://playgrounds.amer-ent.f5demos.com/nginx/)** | **NGINX Plus** (dynamic upstreams, cluster state sync, content caching, active health checks, WAF policy, L7 DoS), **NGINX for Kubernetes** (Gateway Fabric), **NGINX One** (fleet CVE and drift, config sync), **NGINXaaS**. Plus a fundamentals glossary and an MCP server tool. |
+| **[F5 Distributed Cloud (XC)](https://playgrounds.amer-ent.f5demos.com/xc/)** | 19 scenarios. **Multi-Cloud Networking** (5), **WAAP** (5), **Bot Defense & Fraud** (6), **App Delivery & Edge** (3). Plus platform fundamentals and an XC MCP server tool. |
+| **[F5 Insight](https://playgrounds.amer-ent.f5demos.com/insight/)** | **New.** BIG-IP fleet observability and an AI assistant: 16 scenarios across Connect, Fleet, Detect, Ask Insight, Manage and Govern. |
+| **[EOB](https://playgrounds.amer-ent.f5demos.com/eob-playground/)** | F5 eBPF Observability for 5G, built with MantisNet. Kernel-level visibility from RAN to 5G Core, through EOB and eBPF labs and a live 5G fabric. |
 
-This tracker captures feedback for **all** of them — current and future. Use the **"Which playground?"** dropdown when filing an issue so it routes correctly.
+### Sharing a scenario
+
+Every playground, module and scenario has its own link, for example
+`https://playgrounds.amer-ent.f5demos.com/bigip/ltm/full-proxy`.
+Copy the address bar to send someone straight to it. Please include that link in any issue too.
 
 ---
 
-## How to use this repo
+## Filing an issue
 
-### Found a bug?
-[Open a Bug Report](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/new?template=bug_report.yml). Please include:
-- Which playground (Gallery, AI Playground, BIG-IP Playground, XC Distributed Cloud, NGINX Playground, EOB Playground, or another)
-- Which simulation, tab, or feature
-- Browser + OS
-- A screenshot if visual
-- Steps to reproduce
+| You want to… | Use |
+|---|---|
+| Report something broken or wrong | [Bug report](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/new?template=bug_report.yml) |
+| Suggest a scenario, feature or new playground | [Feature request](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/new?template=feature_request.yml) |
+| Ask how something works | [Question](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/new?template=question.yml) |
 
-### Have a feature idea?
-[Suggest a Feature](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/new?template=feature_request.yml). Tell us what you want to demonstrate or learn that the playgrounds don't cover yet — including ideas for **entirely new playgrounds**.
+A good report includes:
+- the scenario link;
+- what you expected vs what you saw;
+- your browser and OS;
+- a screenshot.
 
-> Pitching a brand-new playground? The visual language, layout, theme, and component patterns that every playground follows are documented in `DESIGN.md` (in the source repo). It's the single source of truth for keeping new additions native to the family.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-### Just have a question?
-[Ask a Question](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/new?template=question.yml) or check existing issues — yours might already be answered.
+For questions about F5 products themselves, use [F5 Support](https://my.f5.com), not this tracker.
 
-### Browsing existing reports
+---
+
+## What happens next
+
+1. **Acknowledged.** A bot replies within moments, so you know it landed.
+2. **Triaged.** The issue is labelled by type, playground and priority, with a short note on how it's understood.
+3. **Planned or roadmapped.**
+   - Work that will happen soon gets a plan.
+   - Good ideas that aren't scheduled yet get the `roadmap` label and **stay open**.
+4. **Shipped.** When a change goes live, the issue gets a short release note with a direct link to it on the site, and is closed with the `fixed` label.
+
+Some issues are closed without action, with a reason. If more detail is needed, you'll be asked in the issue.
+
+### Browse
+
 - [All open issues](https://github.com/darshandkd/F5-Playgrounds-feedback/issues)
+- [Roadmap](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aroadmap)
 - [Bugs](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Abug+is%3Aopen)
 - [Feature requests](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aenhancement+is%3Aopen)
-- [Recently fixed](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Afixed+is%3Aclosed)
-- Filter by playground: [`gallery`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Agallery) · [`ai-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aai-playground) · [`bigip-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Abigip-playground) · [`xc-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Axc-playground) · [`nginx-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Anginx-playground) · [`eob-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aeob-playground)
+- [Recently shipped](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Afixed+is%3Aclosed)
+- By playground: [`gallery`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Agallery) · [`ai-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aai-playground) · [`bigip`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Abigip) · [`nginx`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Anginx) · [`xc`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Axc) · [`insight`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Ainsight) · [`eob-playground`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Aeob-playground) · [`cross-cutting`](https://github.com/darshandkd/F5-Playgrounds-feedback/issues?q=label%3Across-cutting)
 
 ---
+
+## A note on accuracy
+
+The scenarios are **conceptual demos**. Product behaviour and terms follow F5's public documentation, but timings, counts and metrics are simulated for the demo, not measured product performance. If you spot a claim that doesn't match F5's docs, that's a bug we want to hear about.
 
 ## Code of conduct
 
-Be kind. Assume good intent. Reports that include slurs, harassment, or off-topic content will be closed without comment.
+Be kind and assume good intent. Reports with harassment, slurs or off-topic content are closed without comment.
