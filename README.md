@@ -10,18 +10,18 @@ This is the **public issue tracker** for **[F5 Playgrounds](https://playgrounds.
 
 ## The playgrounds
 
-Most scenarios follow the same pattern: a short premise, an animated diagram, one **Run** button, and an **on/off switch** for the F5 product so you can compare *with* and *without* it. Every scenario also links to the official F5 documentation through its docs chip; where F5 hasn't published a page yet, the chip says **Soon**.
+Most scenarios follow the same pattern: a short premise, an animated diagram and one **Run** button. Most also let you compare *with* and *without* the F5 product, or flip the one setting that matters; where servers sit behind F5, each has its own on/off switch so you can take one out of service and watch traffic move. Every scenario also links to the official F5 documentation through its docs chip; where F5 hasn't published a page yet, the chip says **Soon**.
 
 **Recently shipped from your feedback:** [#1 Prefill–Decode Disaggregation](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/1) · [#2 Secure Agentic Delivery](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/2) · [#3 Direct links to any playground, module or scenario](https://github.com/darshandkd/F5-Playgrounds-feedback/issues/3).
 
 | Playground | What you can explore |
 |---|---|
 | **[Gallery](https://playgrounds.amer-ent.f5demos.com/)** | The landing page. Pick any playground from here. |
-| **[AI Playground](https://playgrounds.amer-ent.f5demos.com/ai-playground/)** | How F5 delivers and secures AI. **Inference** (8, F5 BNK, NGINX Gateway Fabric and BIG-IP): Prompt Routing, Semantic Caching, Inference-aware Load Balancing, **Prefill–Decode Disaggregation** (new, BNK 2.4), EPP Inference Router, Token Governance, RAG Pipeline, **Secure Agentic Delivery** (new, BNK 2.4). **Safety & Security** (5): F5 AI Guardrails, F5 AI Red Team, F5 Workforce AI, F5 AI Powered WAF, F5 AI Gateway (in development). **Data Delivery** (5). **AI Concepts** (11 explainers, from how LLMs think to MCP). **AI Threats** (7 real incidents). **F5 Products** (the AI portfolio). |
-| **[BIG-IP](https://playgrounds.amer-ent.f5demos.com/bigip/)** | 39 scenarios across six modules. **LTM** (8): load balancing, full proxy, DAG, SSL offload, SNAT, persistence, health monitoring, iRules. **WAF** (6): signatures, brute force, bot defense, behavioral L7 DoS, IP intelligence, AI Powered WAF. **AFM** (3). **APM / Zero Trust Access** (8). **DNS** (7). **CIS for Kubernetes** (7, new): YAML to VIP, Pool Members, Multi-Cluster, Canary Split, WAF Policy, IngressLink, TLS Modes. Plus a BIG-IP **MCP server** tool. |
+| **[AI Playground](https://playgrounds.amer-ent.f5demos.com/ai-playground/)** | How F5 delivers and secures AI. **Inference** (8, F5 BNK, NGINX Gateway Fabric and BIG-IP): Prompt Routing, Semantic Caching, Inference-aware Load Balancing, **Prefill–Decode Disaggregation** (BNK 2.4), EPP Inference Router, Token Governance, RAG Pipeline, **Secure Agentic Delivery** (BNK 2.4). **Safety & Security** (5): F5 AI Guardrails, F5 AI Red Team, F5 Workforce AI, F5 AI Powered WAF, F5 AI Gateway (in development). **Data Delivery** (5). **AI Concepts** (11 explainers, from how LLMs think to MCP). **AI Threats** (7 real incidents). **F5 Products** (the AI portfolio). |
+| **[BIG-IP](https://playgrounds.amer-ent.f5demos.com/bigip/)** | 45 scenarios across seven modules. **LTM** (8): load balancing, full proxy, DAG, SSL offload, SNAT, persistence, health monitoring, iRules. **WAF** (6): signatures, brute force, bot defense, behavioral L7 DoS, IP intelligence, AI Powered WAF. **AFM** (3). **APM / Zero Trust Access** (8). **DNS** (7). **CIS for Kubernetes** (7): YAML to VIP, Pool Members, Multi-Cluster, Canary Split, WAF Policy, IngressLink, TLS Modes. **SSL Orchestrator (SSLO)** (6, new): See Inside, Service Chains, Inbound Inspect, Smart Bypass, Tool Failure, Web Filtering. Plus a BIG-IP **MCP server** as a companion tool. |
 | **[NGINX](https://playgrounds.amer-ent.f5demos.com/nginx/)** | **NGINX Plus** (dynamic upstreams, cluster state sync, content caching, active health checks, WAF policy, L7 DoS), **NGINX for Kubernetes** (Gateway Fabric), **NGINX One** (fleet CVE and drift, config sync), **NGINXaaS**. Plus a fundamentals glossary and an MCP server tool. |
 | **[F5 Distributed Cloud (XC)](https://playgrounds.amer-ent.f5demos.com/xc/)** | 19 scenarios. **Multi-Cloud Networking** (5), **WAAP** (5), **Bot Defense & Fraud** (6), **App Delivery & Edge** (3). Plus platform fundamentals and an XC MCP server tool. |
-| **[F5 Insight](https://playgrounds.amer-ent.f5demos.com/insight/)** | **New.** BIG-IP fleet observability and an AI assistant: 16 scenarios across Connect, Fleet, Detect, Ask Insight, Manage and Govern. |
+| **[F5 Insight](https://playgrounds.amer-ent.f5demos.com/insight/)** | BIG-IP fleet observability and an AI assistant: 16 scenarios across Connect, Fleet, Detect, Ask Insight, Manage and Govern. |
 | **[EOB](https://playgrounds.amer-ent.f5demos.com/eob-playground/)** | F5 eBPF Observability for 5G, built with MantisNet. Kernel-level visibility from RAN to 5G Core, through EOB and eBPF labs and a live 5G fabric. |
 
 ### Sharing a scenario
@@ -54,7 +54,7 @@ For questions about F5 products themselves, use [F5 Support](https://my.f5.com),
 
 ## What happens next
 
-1. **Acknowledged.** A bot replies within moments, so you know it landed.
+1. **Acknowledged.** An automated reply confirms it landed.
 2. **Triaged.** The issue is labelled by type, playground and priority, with a short note on how it's understood.
 3. **Planned or roadmapped.**
    - Work that will happen soon gets a plan.
